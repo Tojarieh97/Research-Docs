@@ -1,0 +1,169 @@
+\documentclass[12pt, a4paper]{article}
+\setcounter{secnumdepth}{4}
+
+
+% A pretty common set of packages
+\usepackage{physics}
+\usepackage{algorithm2e}
+\usepackage{braket}
+\usepackage{mathtools}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{engord}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
+\usepackage[skip=2pt,font=footnotesize,justification=centering]{caption}
+\usepackage[colorlinks=true,
+    linkcolor=black,          % color of internal links
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=black]{hyperref}
+
+
+\renewcommand\bibname{References}
+\graphicspath{ {./figures/} }
+
+% Do you prefer Sans Serif fonts?
+%\usepackage{sfmath}
+%\renewcommand{\familydefault}{\sfdefault} 
+
+
+% Make some additional useful commands
+\newcommand{\ie}{\emph{i.e.}\ }
+\newcommand{\eg}{\emph{e.g.}\ }
+\newcommand{\etal}{\emph{et al}}
+\newcommand{\sub}[1]{$_{\textrm{#1}}$}
+\newcommand{\super}[1]{$^{\textrm{#1}}$}
+\newcommand{\degC}{$^{\circ}$C}
+\newcommand{\wig}{$\sim$}
+\newcommand{\ord}[1]{\engordnumber{#1}}
+\newcommand{\num}[2]{$#1\,$#2}
+\newcommand{\range}[3]{$#1$-$#2\,$#3}
+\newcommand{\roughly}[2]{$\sim\!#1\,$#2}
+\newcommand{\area}[3]{$#1 \! \times \! #2\,$#3}
+\newcommand{\vol}[4]{$#1 \! \times \! #2 \! \times \! #3\,$#4}
+\newcommand{\cube}[1]{$#1 \! \times \! #1 \! \times \! #1$}
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\eqnref}[1]{Equation~\ref{#1}}
+\newcommand{\tableref}[1]{Table~\ref{#1}}
+\newcommand{\secref}[1]{Section \ref{#1}}
+\newcommand{\XC}{\emph{exchange-correlation}}
+\newcommand{\abinit}{\emph{ab initio}}
+\newcommand{\Abinit}{\emph{Ab initio}}
+\newcommand{\Lonetwo}{L1$_{2}$}
+\newcommand{\Dznt}{D0$_{19}$}
+\newcommand{\Dtf}{D8$_{5}$}
+\newcommand{\Btwo}{B$_{2}$}
+\newcommand{\fcc}{\emph{fcc}}
+\newcommand{\hcp}{\emph{hcp}}
+\newcommand{\bcc}{\emph{bcc}}
+\newcommand{\Ang}{{\AA}}
+\newcommand{\inverseAng}{{\AA}$^{-1}$}
+%\newcommand{\comment}[1]{}
+\newcommand{\comment}[1]{\textcolor{red}{[COMMENT: #1]}}
+\newcommand{\more}{\textcolor{red}{[MORE]}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
+% Change this to modify look of header and footer
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage{}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+    \onehalfspacing
+
+    {\centering
+    {\LARGE Analysis of NP-Hard Problems Energy Landscape Using Mutually Unbiased Bases \par}
+    {\Medium M.Sc. Research Proposal }
+
+    {\Small Hadar Tojarieh \par }
+    {\Small Advisor: Assoc. Prof. Tal Mor \par }
+    {\Small Technion - Israel Institute of Technology\\}
+    \today
+    \par
+    }
+
+    \singlespacing
+
+    \begin{abstract}
+        In quantum mechanics, mutually unbiased bases (MUB) are sets of quantum states that are as
+        different as possible from one another in terms of the information that can be obtained from measuring them.
+        MUB provide a powerful tool for characterizing quantum states and can be used to efficiently obtain an energy
+        landscape of optimization problems.
+        The energy landscape serves as a tool for the optimization problem and helps identify the global
+        minimum solution.
+        By combining MUB with machine learning techniques, the optimization process can be improved by reducing the
+        number of search steps required to find the optimal solution.
+        This proposal presents an overview about our idea to use MUB in solving optimization problems and highlights the problems space this approach will solve.
+
+    \end{abstract}
+
+    \tableofcontents
+
+    \onehalfspacing
+
+
+    \section{Introduction and Background}\label{sec:introduction-and-background}
+    \input{introduction-and-background}
+
+
+    \section{Related Work}\label{sec:related-work}
+    There are few parers about using quantum annealing to solve those kind of optimization problems, that are intractable
+    for classical computers.
+    Quantum Annealing (QA) is a method for solving optimization problems that is inspired by the process of annealing in
+    metallurgy.
+    Like classical simulated annealing, it is a method that uses a random search to find the global minimum
+    of an energy function, but it uses the principles of quantum mechanics to guide the search.
+    In QA, the optimization problem is mapped to a physical system, called the quantum annealer,
+    which consists of a large number of interacting quantum bits (qubits).
+    The energy function of the optimization problem is encoded into the Hamiltonian of the quantum annealer,
+    and the ground state of the Hamiltonian corresponds to the optimal solution of the problem.
+
+    The quantum annealer is initialized in a high-energy state,
+    and then it is slowly cooled down to its ground state by applying a time-dependent Hamiltonian.
+    The cooling process is guided by a schedule that controls the rate of change of the Hamiltonian.
+    The schedule is designed to avoid getting stuck in local minima and to increase the chances of finding the global minimum.
+
+
+    \section{Objectives of the Research}\label{sec:objectives-of-the-research}
+    The purpose of the M.Sc. research is to configure a way to draw the energy landscape of a quantum system using MUB.
+    Through that, a great number of realizations can be reached, for example avoid local minima and find the absolute minimum, avoid barren plateaus\@.
+    In our research, we are going to focus on a problem which preoccupies the entire optimization world, the Vehicle Routing Problem.
+    Although our research will focus on this problem as our quantum system, one can refer to almost any problem, when the usage of MUB as
+    a standard tool for drawing the energy landscape will be proven.
+    VRP can be modeled as a search for the global minimum of an energy function, when the energy function represents
+    the cost of a particular solution, such as the total distance traveled by vehicles or the total time taken to visit
+    all customers.
+    The configuration space is defined by the possible routes and the assignments of customers to vehicles.
+    The global minimum of the energy function corresponds to the optimal solution of the problem\@.
+    The search in the energy space can be done by using machine learning model or neural networks, for the correct differential
+    fluctuations needed in the angles of each quantum eigenstate of the mutually unbiased bases in use.
+
+    \section{Other Research Directions}\label{sec:other-research-directions}
+    In addition to our main research topic, Prof. Mor and I are collaborating on other research problems, both in the field
+    of the usages of MUB in quantum computing, such as the combination of MUB in recent Variational Quantum Algorithms.
+    We are also working on expanding Qandies \cite{lin2021quantum} \cite{lin2020quantum} \cite{mor2022digital} terminology usage for explaining other quantum key distribution protocols and quantum phenomenas such as
+    entanglement-swapping and do delay-choice entanglement-swapping~\cite{ma2016delayed}.
+
+    \bibliography{bibi}
+    \bibliographystyle{unsrt}
+\end{document}

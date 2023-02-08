@@ -1,0 +1,97 @@
+\subsection{Mutually Unbiased Bases}\label{subsec:mutually-unbiased-bases}
+Mutually unbiased bases (MUB) are a fundamental concept in quantum mechanics that have been studied extensively in recent years.
+They are a set of orthonormal bases in a Hilbert space that are pairwise unbiased, meaning that the inner product between
+any two states from different bases is the same \cite{durt2010mutually}.
+This property has important implications in quantum mechanics,
+including quantum state tomography and quantum error correction.
+
+\subsubsection{Mathematical Definition of MUB}\label{subsubsec:mathematical-definition-of-mub}
+The mathematical definition of mutually unbiased bases is given as follows:
+Let B1 and B2 be two orthonormal bases in a d-dimensional Hilbert space.
+B1 and B2 are said to be mutually unbiased
+if and only if the absolute value of the inner product between any two vectors in the bases is equal to $\frac{1}{\sqrt {d}}$.
+In other words, measuring a quantum state in one basis provides no information about the state of the
+system when the other basis is used.
+This property is important for quantum cryptography,
+as it allows for the generation of a secure key by measuring a quantum state in multiple, mutually unbiased bases.
+Additionally, the existence of MUB in a d-dimensional Hilbert space has been proven to be linked to the
+mathematical structure of the unitary group and the finite Fourier transform over finite fields.
+
+In a d-dimensional Hilbert space, the maximum number of MUB is d+1, however it is proven that it is not possible to
+have d+1 MUB in a d-dimensional Hilbert space when d is not prime~\cite{ivanovic1987differentiate}.
+MUB have been studied in various systems including qubits and qutrits, and have been found to have applications in
+quantum cryptography, quantum information processing, and entanglement detection.
+For example, MUB can be used to detect entanglement in large systems, or to perform other types of quantum
+information processing tasks.
+
+\subsubsection{Usages in Quantum Computing}
+Recent research has focused on finding MUB in large-dimensional Hilbert spaces, as well as exploring their potential
+uses in quantum computing and quantum communication.
+For example, MUB have been proposed as a tool for performing quantum state tomography with reduced
+measurement data~\cite{bandyopadhyay2002new}.
+In quantum state tomography, the goal is to reconstruct the state of a quantum system by measuring it in multiple bases.
+By measuring the system in multiple MUB, it is possible to obtain a full set of information about the system's state,
+including any properties such as entanglement or coherence.
+
+MUB can also be used to detect and correct errors in quantum systems.
+By measuring the state of the system in multiple MUB,
+it is possible to reveal the presence of errors and the specific basis in which the error occurred.
+This information can then be used to correct the error and restore the system to its original state.
+
+Additionally, MUB have been proposed as a tool for quantum key distribution (QKD). In QKD,
+a key is shared between two parties in a secure way, and MUB can be used to encrypt the key in such a way that any
+third party trying to intercept it will not be able to read it.
+MUB can be used to encrypt the key in a way that it is secure against any type of attacks~\cite{wootters1989optimal}.
+
+We think about using MUB to construct energy landscapes of quantum systems using machine learning techniques.
+A quantum system is represented by hamiltonian, the problems we aim to solve not necessarily a natural quantum systems,
+like molecular hamiltonian, rather than NP-hard problem such as VRP, that have an Ising hamiltonian representation
+considered the specific parameters of the problem examined.
+For example, neural networks can be used to extract features from the measurement data and construct the
+energy landscape of the system.
+This can provide new insights into the behavior of the system that can be hard to gain by using other methods.
+
+
+\subsection{Energy Landscape}\label{subsec:energy-landscape}
+An energy landscape is a concept used in physics and chemistry to describe the potential energy of a system as a function of its configuration.
+The configuration of a system refers to the positions and orientations of its components.
+For example, in a protein, the configuration refers to the positions and orientations of its amino acids.
+The energy landscape is often represented as a surface or a plot,
+with energy values on the vertical axis and the coordinates of the system's configuration on the horizontal axes.
+The landscape can have different features such as minima, maxima, and saddle points, which correspond to stable, unstable,
+and meta-stable states of the system, respectively.
+A local minimum is a point on the energy landscape where the energy is lower than that of its immediate surroundings.
+It corresponds to a stable state of the system, meaning that small perturbations will not cause the system to move away from that point.
+A global minimum is a point on the energy landscape that has the lowest energy of all possible configurations,
+and it represents the most stable state of the system.
+The energy landscape is a useful concept for understanding the behavior of systems that can exist in multiple configurations,
+such as proteins, glasses, and phase transitions.
+It helps to visualize the possible configurations of the system and their relative stability.
+It is also used to design algorithms for finding the global minimum of the energy function.
+
+\subsection{Vehicle Routing Problem}\label{subsec:vehicle-routing-problem}
+
+The Vehicle Routing Problem (VRP) is a central problem in the field of transportation and logistics.
+It aims to find the most efficient routes for a fleet of vehicles to visit a set of customers,
+typically referred to as "stops" or "delivery points", while minimizing the total distance traveled.
+VRP is known for being a NP-hard problem, meaning that it is computationally difficult to find an exact solution
+in a reasonable amount of time for large instances of the problem.
+Researchers have proposed a wide range of solution methods for the VRP, including mathematical programming, heuristics,
+and meta-heuristics.
+Additionally, The problem of VRP can be modeled as a search for the global
+minimum of an energy function in a high-dimensional configuration space.
+The energy function represents the cost of a particular solution, such as the total distance traveled by the
+vehicles or the total time taken to visit all customers.
+
+\subsubsection{Recent Approaches for the Solution}
+The Vehicle Routing Problem (VRP) has been extensively studied by researchers from various fields, including operations research, computer science, and mathematics. There are several approaches that researchers have used to try and solve the VRP:
+\begin{itemize}
+    \item Mathematical Programming: Researchers have tried to solve the VRP by formulating it as a mathematical programming problem and using various optimization algorithms to find the optimal solution.
+    Some of the most common methods used are linear programming, integer programming, and constraint programming~\cite{toth2002overview}.
+    \item Heuristics: Researchers have also developed heuristics and meta-heuristics, such as genetic algorithms, simulated annealing, tabu search, and ant colony optimization, to quickly find near-optimal solutions to the VRP.
+    \item Artificial Intelligence: Researchers have also applied various artificial intelligence techniques, such as neural networks and decision trees, to find good solutions to the VRP.
+    \item Exact Algorithms: Researchers have also developed exact algorithms, such as branch-and-cut and branch-and-price, to find the optimal solution to the VRP. These algorithms are typically very slow but guarantee an optimal solution~\cite{laporte1987exact}.
+   \item Hybrid Approaches: Researchers have also combined multiple approaches, such as combining heuristics and exact algorithms, to find better solutions to the VRP~\cite{hifi2014hybrid}.
+\end{itemize}
+All of these approaches have been successful to some extent in solving the VRP, but the VRP remains a challenging problem and there is still ongoing research in this area. The VRP is a complex problem that has many variations and applications, and researchers continue to explore new approaches to solve it.
+

@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{durt2010mutually}
+Thomas Durt, Berthold-Georg Englert, Ingemar Bengtsson, and Karol
+  {\.Z}yczkowski.
+\newblock On mutually unbiased bases.
+\newblock {\em International journal of quantum information}, 8(04):535--640,
+  2010.
+
+\bibitem{ivanovic1987differentiate}
+Igor~D Ivanovic.
+\newblock How to differentiate between non-orthogonal states.
+\newblock {\em Physics Letters A}, 123(6):257--259, 1987.
+
+\bibitem{bandyopadhyay2002new}
+Somshubhro Bandyopadhyay, P~Oscar Boykin, Vwani Roychowdhury, and Farrokh
+  Vatan.
+\newblock A new proof for the existence of mutually unbiased bases.
+\newblock {\em Algorithmica}, 34(4):512--528, 2002.
+
+\bibitem{wootters1989optimal}
+William~K Wootters and Brian~D Fields.
+\newblock Optimal state-determination by mutually unbiased measurements.
+\newblock {\em Annals of Physics}, 191(2):363--381, 1989.
+
+\bibitem{toth2002overview}
+Paolo Toth and Daniele Vigo.
+\newblock An overview of vehicle routing problems.
+\newblock {\em The vehicle routing problem}, pages 1--26, 2002.
+
+\bibitem{laporte1987exact}
+Gilbert Laporte and Yves Nobert.
+\newblock Exact algorithms for the vehicle routing problem.
+\newblock In {\em North-Holland mathematics studies}, volume 132, pages
+  147--184. Elsevier, 1987.
+
+\bibitem{hifi2014hybrid}
+Mhand Hifi and Lei Wu.
+\newblock A hybrid metaheuristic for the vehicle routing problem with time
+  windows.
+\newblock In {\em 2014 International Conference on Control, Decision and
+  Information Technologies (CoDIT)}, pages 188--194. IEEE, 2014.
+
+\bibitem{lin2021quantum}
+Junan Lin, Tal Mor, and Roman Shapira.
+\newblock Quantum information and beyond--with quantum candies.
+\newblock {\em arXiv preprint arXiv:2110.01402}, 2021.
+
+\bibitem{lin2020quantum}
+Junan Lin and Tal Mor.
+\newblock Quantum candies and quantum cryptography.
+\newblock In {\em Theory and Practice of Natural Computing: 9th International
+  Conference, TPNC 2020, Taoyuan, Taiwan, December 7--9, 2020, Proceedings 9},
+  pages 69--81. Springer, 2020.
+
+\bibitem{mor2022digital}
+Tal Mor, Roman Shapira, and Guy Shemesh.
+\newblock Digital signatures with quantum candies.
+\newblock {\em Entropy}, 24(2):207, 2022.
+
+\bibitem{ma2016delayed}
+Xiao-song Ma, Johannes Kofler, and Anton Zeilinger.
+\newblock Delayed-choice gedanken experiments and their realizations.
+\newblock {\em Reviews of Modern Physics}, 88(1):015005, 2016.
+
+\end{thebibliography}

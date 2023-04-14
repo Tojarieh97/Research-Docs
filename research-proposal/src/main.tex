@@ -92,7 +92,7 @@
     \onehalfspacing
 
     {\centering
-    {\LARGE Analysis of NP-Hard Problems Energy Landscape Using Mutually Unbiased Bases \par}
+    {\LARGE Analysis of NP and QMA Problems Energy Landscape Using Mutually Unbiased Bases \par}
     {\Medium M.Sc. Research Proposal }
 
     {\Small Hadar Tojarieh \par }
@@ -105,16 +105,19 @@
     \singlespacing
 
     \begin{abstract}
-        In quantum mechanics, mutually unbiased bases (MUB) are sets of quantum states that are as
-        different as possible from one another in terms of the information that can be obtained from measuring them.
-        MUB provide a powerful tool for characterizing quantum states and can be used to efficiently obtain an energy
-        landscape of optimization problems.
-        The energy landscape serves as a tool for the optimization problem and helps identify the global
-        minimum solution.
-        By combining MUB with machine learning techniques, the optimization process can be improved by reducing the
-        number of search steps required to find the optimal solution.
-        This proposal presents an overview about our idea to use MUB in solving optimization problems and highlights the problems space this approach will solve.
-
+        In quantum mechanics, Mutually Unbiased Bases (MUB) are sets of quantum states that are maximally distinct
+        from one another and exhibit a lack of information when a state from one basis is measured in another basis.
+        These MUB represent a powerful tool for characterizing quantum states.
+        Our primary objective is to demonstrate the utility of MUB in obtaining a reliable energy landscape
+        for optimization problems.
+        The energy landscape, as a tool for optimization, potentially plays a crucial role in efficiently identifying
+        the global minimum solution while avoiding local minima and barren plateaus.
+        Our secondary goal, regards the field of not NP-hard problems,
+        is integrating the MUB approach with machine learning techniques to enhance the efficiency of the
+        optimization process.
+        This integration aims to reduce the number of search steps required to reach the optimal
+        solution and represents a novel approach to the optimization of classical NP problems and QMA problems which can be modeled as
+        quantum systems.
     \end{abstract}
 
     \tableofcontents
@@ -124,7 +127,6 @@
 
     \section{Introduction and Background}\label{sec:introduction-and-background}
     \input{introduction-and-background}
-
 
     \section{Related Work}\label{sec:related-work}
     There are few parers about using quantum annealing to solve those kind of optimization problems, that are intractable
@@ -148,8 +150,15 @@
     The purpose of the M.Sc. research is to configure a way to draw the energy landscape of a quantum system using MUB.
     Through that, a great number of realizations can be reached, for example avoid local minima and find the absolute minimum, avoid barren plateaus\@.
     In our research, we are going to focus on a problem which preoccupies the entire optimization world, the Vehicle Routing Problem.
-    Although our research will focus on this problem as our quantum system, one can refer to almost any problem, when the usage of MUB as
-    a standard tool for drawing the energy landscape will be proven.
+    Although our research will focus on this problem as our quantum system, one can refer to almost any NP-hard problem, after the usage of MUB as
+    a potential tool for drawing the energy landscape will be demonstrated.
+    In the pursuit of our research objective, the utilization of quantum algorithms and the implementation of a hybrid
+    quantum-classical approach may provide significant benefits.
+    In particular, the modeling of our problem into
+    Variational Quantum Algorithms (VQA) or the Variational Quantum Eigensolver (VQE) has the potential to offer
+    improved approximations and the discovery of larger subclasses of NP-hard problems that are not NP-hard themselves.
+    Despite the limitations imposed by shallow quantum circuits, such a hybrid solution may still outperform traditional
+    classical methods, providing a promising avenue for further exploration and advancement in the field.
     VRP can be modeled as a search for the global minimum of an energy function, when the energy function represents
     the cost of a particular solution, such as the total distance traveled by vehicles or the total time taken to visit
     all customers.
@@ -157,11 +166,29 @@
     The global minimum of the energy function corresponds to the optimal solution of the problem\@.
     The search in the energy space can be done by using machine learning model or neural networks, for the correct differential
     fluctuations needed in the angles of each quantum eigenstate of the mutually unbiased bases in use.
+    The use of machine learning in the context of MUB is motivated by two main considerations.
+    Firstly, the exponential growth of the number of MUB states for a large number of qubits necessitates the development
+    of techniques for efficiently selecting a portion of these states or selecting them only for a subset of qubits.
+    Secondly, even for small numbers of qubits, there is a need for innovative methods to explore the space beyond the
+    vicinity of MUB states.
+    We think about using MUB to construct energy landscapes of quantum systems using machine learning techniques.
+    This can provide new insights into the behavior of the system that can be hard to gain by using other methods.
+    The application of machine learning algorithms can help to overcome challenges by allowing for the
+    characterization of smaller-scale problems and facilitating the transfer of insights to more complex systems with a
+    larger number of qubits.
+    In order to gain a comprehensive understanding of the landscape, it is necessary to not only examine the exact
+    MUB-states points but also their surrounding regions.
+    This can be achieved through two methods:
+    By initiating the quantum circuit at each MUB state while incorporating a parametrized circuit that combines the MUB state
+    with a standard ansatz.
+    By starting at each MUB state and constructing a small-angle ansatz through the implementation of small-angle
+    rotations of each qubit and small-angle rotations of the controlled-phase operation.
+
 
     \section{Other Research Directions}\label{sec:other-research-directions}
-    In addition to our main research topic, Prof. Mor and I are collaborating on other research problems, both in the field
-    of the usages of MUB in quantum computing, such as the combination of MUB in recent Variational Quantum Algorithms.
-    We are also working on expanding Qandies \cite{lin2021quantum} \cite{lin2020quantum} \cite{mor2022digital} terminology usage for explaining other quantum key distribution protocols and quantum phenomenas such as
+    In addition to our main research topic, Prof. Mor and I are collaborating on other research problems.
+    We are also working on expanding Qandies \cite{lin2021quantum} \cite{lin2020quantum} \cite{mor2022digital} terminology
+    usage for explaining other quantum key distribution protocols and quantum phenomenas such as
     entanglement-swapping and do delay-choice entanglement-swapping~\cite{ma2016delayed}.
 
     \bibliography{bibi}

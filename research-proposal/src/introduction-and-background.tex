@@ -1,5 +1,5 @@
 \subsection{Mutually Unbiased Bases}\label{subsec:mutually-unbiased-bases}
-Mutually unbiased bases (MUB) are a fundamental concept in quantum mechanics that have been studied extensively in recent years.
+Mutually unbiased bases (MUB) are a fundamental concept in quantum information that have been studied extensively in recent years.
 They are a set of orthonormal bases in a Hilbert space that are pairwise unbiased, meaning that the inner product between
 any two states from different bases is the same \cite{durt2010mutually}.
 This property has important implications in quantum mechanics,
@@ -9,29 +9,28 @@ including quantum state tomography and quantum error correction.
 The mathematical definition of mutually unbiased bases is given as follows:
 Let B1 and B2 be two orthonormal bases in a d-dimensional Hilbert space.
 B1 and B2 are said to be mutually unbiased
-if and only if the absolute value of the inner product between any two vectors in the bases is equal to $\frac{1}{\sqrt {d}}$.
-In other words, measuring a quantum state in one basis provides no information about the state of the
-system when the other basis is used.
+if and only if the absolute value of the inner product between any two vectors in the two bases is equal to $\frac{1}{\sqrt {d}}$.
 This property is important for quantum cryptography,
 as it allows for the generation of a secure key by measuring a quantum state in multiple, mutually unbiased bases.
 Additionally, the existence of MUB in a d-dimensional Hilbert space has been proven to be linked to the
 mathematical structure of the unitary group and the finite Fourier transform over finite fields.
 
-In a d-dimensional Hilbert space, the maximum number of MUB is d+1, however it is proven that it is not possible to
-have d+1 MUB in a d-dimensional Hilbert space when d is not prime~\cite{ivanovic1987differentiate}.
-MUB have been studied in various systems including qubits and qutrits, and have been found to have applications in
-quantum cryptography, quantum information processing, and entanglement detection.
-For example, MUB can be used to detect entanglement in large systems, or to perform other types of quantum
-information processing tasks.
+When the dimensionality of the Hilbert space is prime or power of prime, it is possible to construct d+1 MUB.
+In addition, for certain composite dimensions, there exist subsets of MUB that satisfy certain conditions,
+such as the so-called "symmetric informationally complete positive operator-valued measures" (SIC-POVMs),
+which can be used in quantum state tomography and related applications.
 
-\subsubsection{Usages in Quantum Computing}
+
+\subsubsection{Usages in Quantum Tomography}
 Recent research has focused on finding MUB in large-dimensional Hilbert spaces, as well as exploring their potential
-uses in quantum computing and quantum communication.
-For example, MUB have been proposed as a tool for performing quantum state tomography with reduced
-measurement data~\cite{bandyopadhyay2002new}.
-In quantum state tomography, the goal is to reconstruct the state of a quantum system by measuring it in multiple bases.
-By measuring the system in multiple MUB, it is possible to obtain a full set of information about the system's state,
-including any properties such as entanglement or coherence.
+uses in quantum state tomography and quantum information science.
+Quantum state tomography is the process of learning an unknown quantum state from repeated state preparations and measurements,
+and yields optimal knowledge of the state's density matrix. MUB can be used to obtain this information efficiently,
+as they provide a way to obtain unbiased estimates of the density matrix elements. In particular, the use of symmetric
+informationally complete positive operator-valued measures (SIC-POVMs), which form a special subset of MUB,
+has been shown to provide accurate and efficient reconstructions of quantum states in a variety of contexts.
+For example, SIC-POVMs have been used in quantum process tomography to reconstruct the dynamics of quantum channels,
+as well as in experimental studies of high-dimensional entanglement \cite{ZhuHayashi2020}\cite{GrossEtAl2010}.
 
 MUB can also be used to detect and correct errors in quantum systems.
 By measuring the state of the system in multiple MUB,
@@ -41,57 +40,101 @@ This information can then be used to correct the error and restore the system to
 Additionally, MUB have been proposed as a tool for quantum key distribution (QKD). In QKD,
 a key is shared between two parties in a secure way, and MUB can be used to encrypt the key in such a way that any
 third party trying to intercept it will not be able to read it.
-MUB can be used to encrypt the key in a way that it is secure against any type of attacks~\cite{wootters1989optimal}.
+MUB can be used to encrypt the key in a way that it is more secure against any type of attacks~\cite{wootters1989optimal}.
 
-We think about using MUB to construct energy landscapes of quantum systems using machine learning techniques.
-A quantum system is represented by hamiltonian, the problems we aim to solve not necessarily a natural quantum systems,
-like molecular hamiltonian, rather than NP-hard problem such as VRP, that have an Ising hamiltonian representation
-considered the specific parameters of the problem examined.
-For example, neural networks can be used to extract features from the measurement data and construct the
-energy landscape of the system.
-This can provide new insights into the behavior of the system that can be hard to gain by using other methods.
+\subsection{Variational Quantum Algorithms (VQA)}\label{subsec:variational-quantum-algorithms}
+Variational quantum algorithms (VQA) are a class of quantum algorithms that utilize a classical optimization loop to
+find the optimal parameters of a quantum circuit~\cite{cerezo2021variational}.
+VQAs are designed to solve optimization problems and sample problems,
+including finding the ground state energy of a quantum system and solving linear systems of equations. One of the key features
+of VQAs is their ability to handle large quantum systems with a shallow quantum circuit.
+
+\subsubsection{Variational Quantum Eigensolver (VQE)}
+The Variational Quantum Eigensolver (VQE) is a popular and widely used VQA, designed to find the eigenvalues of a quantum Hamiltonian,
+which describes the energy of a quantum system. The VQE algorithm consists of a parameterized quantum circuit that is used to generate a
+wavefunction that approximates the ground state of the Hamiltonian. The circuit parameters are optimized using a classical optimization
+algorithm to minimize the energy expectation value of the wavefunction with respect to the Hamiltonian. This process is repeated until convergence,
+at which point the final wavefunction is used to estimate the ground state energy~\cite{peruzzo2014variational}.
+VQE has been applied to a wide range of problems in quantum chemistry, including the calculation of molecular energies
+and properties, as well as the simulation of materials. In particular, VQE has been shown to be highly effective for
+simulating small and medium-sized quantum systems, where exact diagonalization and quantum Monte Carlo methods become infeasible
+due to the exponential scaling of the dimension of the quantum state space.
+
+\subsubsection{QAOA}
+The Quantum Approximate Optimization Algorithm (QAOA) is a VQA that was introduced in 2014 ~\cite{farhi2014quantum} to address combinatorial optimization problems.
+QAOA involves the construction of a parameterized quantum circuit, which is optimized using
+classical optimization algorithms to minimize a cost function related to the problem at hand.
+The cost function is formulated as a sum of Pauli products, and the QAOA circuit acts as a parameterized
+rotation of these products in the computational basis. The QAOA algorithm has been applied to various
+optimization problems, including MaxCut, Minimum Vertex Cover, and Max-SAT, among others, demonstrating
+its potential for solving combinatorial optimization problems on quantum computers.
+The QAOA algorithm has also been shown to be effective for tackling optimization problems in classical
+machine learning and operations research, such as portfolio optimization and logistics planning.
 
 
 \subsection{Energy Landscape}\label{subsec:energy-landscape}
-An energy landscape is a concept used in physics and chemistry to describe the potential energy of a system as a function of its configuration.
-The configuration of a system refers to the positions and orientations of its components.
-For example, in a protein, the configuration refers to the positions and orientations of its amino acids.
-The energy landscape is often represented as a surface or a plot,
-with energy values on the vertical axis and the coordinates of the system's configuration on the horizontal axes.
-The landscape can have different features such as minima, maxima, and saddle points, which correspond to stable, unstable,
-and meta-stable states of the system, respectively.
-A local minimum is a point on the energy landscape where the energy is lower than that of its immediate surroundings.
-It corresponds to a stable state of the system, meaning that small perturbations will not cause the system to move away from that point.
+An energy landscape is a concept used in physics and chemistry to describe the potential energy of a system as a function
+of its configuration \cite{wales2003energy}. The configuration of a system refers to the positions and orientations of
+its components. For example, in a protein, the configuration refers to the positions and orientations of its amino
+acids \cite{dill2012protein}. The energy landscape is often represented as a surface or a plot, with energy values on
+the vertical axis and the coordinates of the system's configuration on the horizontal axes \cite{wales2003energy}.
+The landscape can have different features such as minima, maxima, and saddle points, which correspond to stable,
+unstable, and meta-stable states of the system, respectively. A local minimum is a point on the energy landscape where
+the energy is lower than that of its immediate surroundings. It corresponds to a stable state of the system,
+meaning that small perturbations will not cause the system to move away from that point \cite{wales2003energy}.
 A global minimum is a point on the energy landscape that has the lowest energy of all possible configurations,
-and it represents the most stable state of the system.
-The energy landscape is a useful concept for understanding the behavior of systems that can exist in multiple configurations,
-such as proteins, glasses, and phase transitions.
-It helps to visualize the possible configurations of the system and their relative stability.
-It is also used to design algorithms for finding the global minimum of the energy function.
+and it represents the most stable state of the system \cite{wales2003energy}. The energy landscape is a useful concept
+for understanding the behavior of systems that can exist in multiple configurations, such as proteins, glasses,
+and phase transitions. It helps to visualize the possible configurations of the system and their relative stability.
+It is also used to design algorithms for finding the global minimum of the energy function \cite{wales1997global}.
 
 \subsection{Vehicle Routing Problem}\label{subsec:vehicle-routing-problem}
 
 The Vehicle Routing Problem (VRP) is a central problem in the field of transportation and logistics.
 It aims to find the most efficient routes for a fleet of vehicles to visit a set of customers,
 typically referred to as "stops" or "delivery points", while minimizing the total distance traveled.
-VRP is known for being a NP-hard problem, meaning that it is computationally difficult to find an exact solution
+VRP is known for being a NP-hard problem \cite{toth2002vehicle}, meaning that it is computationally difficult to find an exact solution
 in a reasonable amount of time for large instances of the problem.
-Researchers have proposed a wide range of solution methods for the VRP, including mathematical programming, heuristics,
-and meta-heuristics.
-Additionally, The problem of VRP can be modeled as a search for the global
-minimum of an energy function in a high-dimensional configuration space.
-The energy function represents the cost of a particular solution, such as the total distance traveled by the
-vehicles or the total time taken to visit all customers.
 
-\subsubsection{Recent Approaches for the Solution}
-The Vehicle Routing Problem (VRP) has been extensively studied by researchers from various fields, including operations research, computer science, and mathematics. There are several approaches that researchers have used to try and solve the VRP:
+\subsubsection{Classical Computing Approaches for the Solution}
+The Vehicle Routing Problem (VRP) has been extensively studied by researchers from various fields, including operations research,
+computer science, and mathematics. Researchers have proposed a wide range of solution methods for the VRP, including mathematical programming, heuristics,
+and meta-heuristics.
+There are several approaches that researchers have used to try and solve the VRP:
 \begin{itemize}
     \item Mathematical Programming: Researchers have tried to solve the VRP by formulating it as a mathematical programming problem and using various optimization algorithms to find the optimal solution.
-    Some of the most common methods used are linear programming, integer programming, and constraint programming~\cite{toth2002overview}.
+    Due to the complexity of the problem, finding an exact optimal solution for large instances of the VRP is computationally infeasible.
+    Therefore, researchers have developed various approximations and optimization algorithms to find near-optimal solutions.
+    Some of the most common methods used to solve the VRP include linear programming, integer programming, and constraint programming ~\cite{toth2002overview}.
+    e.g.\ constraint programming involves formulating the VRP as a set of constraints and using constraint satisfaction algorithms to find a feasible solution.
     \item Heuristics: Researchers have also developed heuristics and meta-heuristics, such as genetic algorithms, simulated annealing, tabu search, and ant colony optimization, to quickly find near-optimal solutions to the VRP.
     \item Artificial Intelligence: Researchers have also applied various artificial intelligence techniques, such as neural networks and decision trees, to find good solutions to the VRP.
     \item Exact Algorithms: Researchers have also developed exact algorithms, such as branch-and-cut and branch-and-price, to find the optimal solution to the VRP. These algorithms are typically very slow but guarantee an optimal solution~\cite{laporte1987exact}.
-   \item Hybrid Approaches: Researchers have also combined multiple approaches, such as combining heuristics and exact algorithms, to find better solutions to the VRP~\cite{hifi2014hybrid}.
+    \item Hybrid Approaches: Researchers have also combined multiple approaches, such as combining heuristics and exact algorithms, to find better solutions to the VRP~\cite{hifi2014hybrid}.
 \end{itemize}
-All of these approaches have been successful to some extent in solving the VRP, but the VRP remains a challenging problem and there is still ongoing research in this area. The VRP is a complex problem that has many variations and applications, and researchers continue to explore new approaches to solve it.
+All of these approaches have been successful to some extent in solving the VRP, but the VRP remains a challenging problem and there is still ongoing research in this area.
+The VRP is a complex problem that has many variations and applications, and researchers continue to explore new approaches to solve it.
+
+\subsubsection{Quantum Computing Approaches for the Solution}
+One of the quantum computing approaches for solving the VRP is the quantum annealing algorithm.
+This algorithm uses a quantum system to find the global minimum of an objective function by gradually reducing the
+energy of the system. In the case of the VRP, the objective function represents the total distance or cost of all
+the routes, and the quantum system can be used to find the optimal solution in a much faster time compared to classical
+optimization algorithms.
+Another approach is the quantum-inspired optimization algorithms, which mimic the behavior of quantum systems to solve
+classical optimization problems. These algorithms have been shown to be effective in finding near-optimal solutions to
+the VRP in a much faster time compared to classical optimization algorithms.
+A recent article applied QAOA to the VRP~\cite{9605345}. In this work, the authors propose a quantum-inspired heuristic
+based on QAOA for the VRP and
+compare its performance with classical heuristics. The results show that the proposed quantum-inspired heuristic
+outperforms the classical heuristics in terms of solution quality and computational time.
+There were also VQE solution approaches for VRP~\cite{mohanty2022analysis}.
+Analysis of the effects of noise in a gate-based
+simulation of an algorithm to solve the vehicle routing problem.
+It was found that amplitude damping
+noise causes the least impact on the results of an optimized
+variational circuit. In contrast bit-phase-flip, depolarising and
+phase-flip noise channels had the maximum negative impact.
+
+
 

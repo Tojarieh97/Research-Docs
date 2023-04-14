@@ -7,21 +7,62 @@ Thomas Durt, Berthold-Georg Englert, Ingemar Bengtsson, and Karol
 \newblock {\em International journal of quantum information}, 8(04):535--640,
   2010.
 
-\bibitem{ivanovic1987differentiate}
-Igor~D Ivanovic.
-\newblock How to differentiate between non-orthogonal states.
-\newblock {\em Physics Letters A}, 123(6):257--259, 1987.
+\bibitem{ZhuHayashi2020}
+Huangjun Zhu and Masahito Hayashi.
+\newblock Symmetric informationally complete positive operator-valued measures
+  and mutually unbiased bases in dimension six.
+\newblock {\em Physical Review Research}, 2(1):013338, 2020.
 
-\bibitem{bandyopadhyay2002new}
-Somshubhro Bandyopadhyay, P~Oscar Boykin, Vwani Roychowdhury, and Farrokh
-  Vatan.
-\newblock A new proof for the existence of mutually unbiased bases.
-\newblock {\em Algorithmica}, 34(4):512--528, 2002.
+\bibitem{GrossEtAl2010}
+David Gross, Yi-Kai Liu, Steven~T Flammia, Simon Becker, and Jens Eisert.
+\newblock Quantum state tomography via compressed sensing.
+\newblock {\em Physical Review Letters}, 105(15):150401, 2010.
 
 \bibitem{wootters1989optimal}
 William~K Wootters and Brian~D Fields.
 \newblock Optimal state-determination by mutually unbiased measurements.
 \newblock {\em Annals of Physics}, 191(2):363--381, 1989.
+
+\bibitem{cerezo2021variational}
+Marco Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C Benjamin, Suguru Endo,
+  Keisuke Fujii, Jarrod~R McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio,
+  et~al.
+\newblock Variational quantum algorithms.
+\newblock {\em Nature Reviews Physics}, 3(9):625--644, 2021.
+
+\bibitem{peruzzo2014variational}
+Alberto Peruzzo, Jarrod McClean, Peter Shadbolt, Man-Hong Yung, Xiao-Qi Zhou,
+  Peter~J Love, Al{\'a}n Aspuru-Guzik, and Jeremy~L O’brien.
+\newblock A variational eigenvalue solver on a photonic quantum processor.
+\newblock {\em Nature communications}, 5(1):4213, 2014.
+
+\bibitem{farhi2014quantum}
+Edward Farhi, Jeffrey Goldstone, and Sam Gutmann.
+\newblock A quantum approximate optimization algorithm.
+\newblock {\em arXiv preprint arXiv:1411.4028}, 2014.
+
+\bibitem{wales2003energy}
+David~J Wales and Harold~A Scheraga.
+\newblock {\em Energy Landscapes: With Applications to Clusters, Biomolecules
+  and Glasses}.
+\newblock Cambridge University Press, 2003.
+
+\bibitem{dill2012protein}
+Ken~A Dill and Justin~L MacCallum.
+\newblock The protein-folding problem, 50 years on.
+\newblock {\em Science}, 338(6110):1042--1046, 2012.
+
+\bibitem{wales1997global}
+David~J Wales and Jonathan~PK Doye.
+\newblock Global optimization by basin-hopping and the lowest energy structures
+  of lennard-jones clusters containing up to 110 atoms.
+\newblock {\em The Journal of Physical Chemistry A}, 101(28):5111--5116, 1997.
+
+\bibitem{toth2002vehicle}
+Paolo Toth and Daniele Vigo.
+\newblock The vehicle routing problem.
+\newblock {\em Society for Industrial and Applied Mathematics}, 46(3):412--432,
+  2002.
 
 \bibitem{toth2002overview}
 Paolo Toth and Daniele Vigo.
@@ -40,6 +81,18 @@ Mhand Hifi and Lei Wu.
   windows.
 \newblock In {\em 2014 International Conference on Control, Decision and
   Information Technologies (CoDIT)}, pages 188--194. IEEE, 2014.
+
+\bibitem{9605345}
+Whei~Yeap Suen, Chun Yat~Lee, and Hoong~Chuin Lau.
+\newblock Quantum-inspired algorithm for vehicle sharing problem.
+\newblock In {\em 2021 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)}, pages 17--23, 2021.
+
+\bibitem{mohanty2022analysis}
+Nishikanta Mohanty, Bikash~K Behera, and Christopher Ferrie.
+\newblock Analysis of the vehicle routing problem sovled via hybrid quantum
+  algorithms in presence of noisy channels.
+\newblock {\em arXiv preprint arXiv:2205.07630}, 2022.
 
 \bibitem{lin2021quantum}
 Junan Lin, Tal Mor, and Roman Shapira.

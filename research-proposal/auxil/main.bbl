@@ -64,6 +64,16 @@ Paolo Toth and Daniele Vigo.
 \newblock {\em Society for Industrial and Applied Mathematics}, 46(3):412--432,
   2002.
 
+\bibitem{Toth2014}
+Paolo Toth and Daniele Vigo.
+\newblock {\em Vehicle Routing: Methods and Studies}.
+\newblock Society for Industrial and Applied Mathematics, 2 edition, 2014.
+
+\bibitem{Desrochers1992}
+Martin Desrochers, Jan~Karel Lenstra, and Martin W.~P. Savelsbergh.
+\newblock Vehicle routing and scheduling with time windows and multiple routes.
+\newblock {\em Operations Research}, 40(1):110--125, 1992.
+
 \bibitem{toth2002overview}
 Paolo Toth and Daniele Vigo.
 \newblock An overview of vehicle routing problems.

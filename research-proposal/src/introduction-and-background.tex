@@ -10,8 +10,6 @@ The mathematical definition of mutually unbiased bases is given as follows:
 Let B1 and B2 be two orthonormal bases in a d-dimensional Hilbert space.
 B1 and B2 are said to be mutually unbiased
 if and only if the absolute value of the inner product between any two vectors in the two bases is equal to $\frac{1}{\sqrt {d}}$.
-This property is important for quantum cryptography,
-as it allows for the generation of a secure key by measuring a quantum state in multiple, mutually unbiased bases.
 Additionally, the existence of MUB in a d-dimensional Hilbert space has been proven to be linked to the
 mathematical structure of the unitary group and the finite Fourier transform over finite fields.
 
@@ -59,6 +57,22 @@ VQE has been applied to a wide range of problems in quantum chemistry, including
 and properties, as well as the simulation of materials. In particular, VQE has been shown to be highly effective for
 simulating small and medium-sized quantum systems, where exact diagonalization and quantum Monte Carlo methods become infeasible
 due to the exponential scaling of the dimension of the quantum state space.
+Besides quantum chemistry, VQE has been used for a variety of applications, including optimization problems modeled by
+Ising-model Hamiltonians \cite{moll2018introduction}.
+The Ising model is a mathematical model used to describe the behavior of interacting spins in a system.
+The Ising-model Hamiltonian can be mapped onto a quantum circuit, which can then be optimized using VQE\cite{moll2018introduction}.
+By finding the ground state of the Ising-model Hamiltonian, researchers can obtain an approximate solution to the original problem.
+One common application of the Ising model in the context of VQE is in solving the Max-Cut problem.
+In this problem, the goal is to partition a graph into two sets such that the number of edges between the sets is maximized.
+This problem can be transformed into an Ising-model Hamiltonian, where the spins represent the nodes of the graph and
+the coupling constants represent the edges.
+By using VQE to find the ground state of the Ising-model Hamiltonian, researchers can obtain an approximate solution to the Max-Cut problem\cite{farhi2014quantum}.
+Another application of VQE is in solving systems of linear equations, where the goal is to find the solution to a set
+of linear equations. The fundamental state, or ground state, of a Hamiltonian can be used to solve linear equations
+in a way that is similar to classical linear algebra algorithms. Specifically, the Hamiltonian can be constructed
+such that its ground state corresponds to the solution of the linear equations. By finding the ground state of the
+Hamiltonian using VQE, the solution to the linear equations can be obtained\cite{harrow2009quantum}.
+
 
 \subsubsection{QAOA}
 The Quantum Approximate Optimization Algorithm (QAOA) is a VQA that was introduced in 2014 ~\cite{farhi2014quantum} to address combinatorial optimization problems.
@@ -135,9 +149,9 @@ optimization algorithms.\\
 Another approach is the quantum-inspired optimization algorithms, which mimic the behavior of quantum systems to solve
 classical optimization problems. These algorithms have been shown to be effective in finding near-optimal solutions to
 the VRP in a much faster time compared to classical optimization algorithms.\\
-A recent article applied QAOA to the VRP~\cite{9605345}. In this work, the authors propose a quantum-inspired heuristic
+A recent article applied QAOA to the VRP~\cite{9605345}. In this work, the authors propose a heuristic
 based on QAOA for the VRP and
-compare its performance with classical heuristics. The results show that the proposed quantum-inspired heuristic
+compare its performance with classical heuristics. The results show that the proposed heuristic
 outperforms the classical heuristics in terms of solution quality and computational time.
 There were also VQE solution approaches for VRP~\cite{mohanty2022analysis}.
 Analysis of the effects of noise in a gate-based

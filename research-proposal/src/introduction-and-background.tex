@@ -95,6 +95,17 @@ It aims to find the most efficient routes for a fleet of vehicles to visit a set
 typically referred to as "stops" or "delivery points", while minimizing the total distance traveled.
 VRP is known for being a NP-hard problem \cite{toth2002vehicle}, meaning that it is computationally difficult to find an exact solution
 in a reasonable amount of time for large instances of the problem.
+Some variants of the VRP are known to be NP-complete, meaning that finding the optimal solution is
+computationally intractable as the problem size grows.
+One of the most common NP-complete versions of the VRP is the Capacitated Vehicle Routing Problem (CVRP) \cite{Toth2014}.
+In the CVRP, a fleet of vehicles with limited capacity must be used to serve a set of customers, each with a known
+demand. The objective is to minimize the number of vehicles and the total distance traveled while satisfying
+the capacity constraints.
+Another common NP-complete version of the VRP is the Vehicle Routing Problem with Time Windows (VRPTW) \cite{Desrochers1992}.
+In the VRPTW, each customer has a time window during which they can be serviced, and the objective is to minimize
+the total travel time while ensuring that all time windows are satisfied.
+Both the CVRP and the VRPTW are NP-complete, meaning that finding the optimal solution for large problem instances is
+extremely difficult.
 
 \subsubsection{Classical Computing Approaches for the Solution}
 The Vehicle Routing Problem (VRP) has been extensively studied by researchers from various fields, including operations research,

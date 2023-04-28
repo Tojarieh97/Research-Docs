@@ -94,17 +94,17 @@ Nishikanta Mohanty, Bikash~K Behera, and Christopher Ferrie.
   algorithms in presence of noisy channels.
 \newblock {\em arXiv preprint arXiv:2205.07630}, 2022.
 
-\bibitem{lin2021quantum}
-Junan Lin, Tal Mor, and Roman Shapira.
-\newblock Quantum information and beyond--with quantum candies.
-\newblock {\em arXiv preprint arXiv:2110.01402}, 2021.
-
 \bibitem{lin2020quantum}
 Junan Lin and Tal Mor.
 \newblock Quantum candies and quantum cryptography.
 \newblock In {\em Theory and Practice of Natural Computing: 9th International
   Conference, TPNC 2020, Taoyuan, Taiwan, December 7--9, 2020, Proceedings 9},
   pages 69--81. Springer, 2020.
+
+\bibitem{lin2021quantum}
+Junan Lin, Tal Mor, and Roman Shapira.
+\newblock Quantum information and beyond--with quantum candies.
+\newblock {\em arXiv preprint arXiv:2110.01402}, 2021.
 
 \bibitem{mor2022digital}
 Tal Mor, Roman Shapira, and Guy Shemesh.

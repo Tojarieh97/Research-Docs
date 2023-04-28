@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  14 APR 2023 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  14 APR 2023 15:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -717,7 +717,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (introduction-and-background.tex [1
 
 {C:/Users/hadar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4]
-Overfull \hbox (2.63136pt too wide) in paragraph at lines 118--119
+Overfull \hbox (2.63136pt too wide) in paragraph at lines 112--113
 []\T1/cmr/m/n/12 Exact Al-gorithms: Re-search-ers have also de-veloped ex-act a
 l-gorithms, such as branch-
  []
@@ -752,9 +752,9 @@ l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/hadar/AppData
 s/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 
 Output written on C:/Users\hadar\my-projects\Research-Docs\research-proposal\ou
-t\main.pdf (9 pages, 191338 bytes).
+t\main.pdf (9 pages, 190461 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
+ 549 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

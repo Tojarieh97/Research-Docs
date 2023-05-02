@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 5 items.
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Database file #1: bibi.bib
-You've used 20 entries,
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            579 strings with 7219 characters,
-and the built_in function-call counts, 5149 in all, are:
-= -- 461
-> -- 238
+            594 strings with 7566 characters,
+and the built_in function-call counts, 5710 in all, are:
+= -- 506
+> -- 265
 < -- 6
-+ -- 86
-- -- 66
-* -- 363
-:= -- 806
-add.period$ -- 63
-call.type$ -- 20
-change.case$ -- 19
++ -- 96
+- -- 73
+* -- 396
+:= -- 897
+add.period$ -- 72
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 228
-empty$ -- 490
-format.name$ -- 66
-if$ -- 1158
+cite$ -- 23
+duplicate$ -- 257
+empty$ -- 551
+format.name$ -- 73
+if$ -- 1289
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 21
-newline$ -- 103
-num.names$ -- 20
-pop$ -- 53
+int.to.str$ -- 23
+missing$ -- 26
+newline$ -- 118
+num.names$ -- 23
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 115
+skip$ -- 123
 stack$ -- 0
-substring$ -- 364
-swap$ -- 61
+substring$ -- 378
+swap$ -- 64
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 51
-width$ -- 22
-write$ -- 222
+while$ -- 54
+width$ -- 25
+write$ -- 255

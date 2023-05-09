@@ -1,19 +1,19 @@
 \subsection{Mutually Unbiased Bases}\label{subsec:mutually-unbiased-bases}
 Mutually unbiased bases (MUB) are a fundamental concept in quantum information that have been studied extensively in recent years.
 They are a set of orthonormal bases in a Hilbert space that are pairwise unbiased, meaning that the inner product between
-any two states from different bases is the same \cite{wootters1989optimal}.
+any two states from different bases is the same~\cite{wootters1989optimal}~\cite{durt2010mutually}.
 This property has important implications in quantum mechanics,
 including quantum state tomography and quantum error correction.
 
 \subsubsection{Mathematical Definition of MUB}\label{subsubsec:mathematical-definition-of-mub}
 The mathematical definition of mutually unbiased bases is given as follows:
-Let B1 and B2 be two orthonormal bases in a d-dimensional Hilbert space.
-B1 and B2 are said to be mutually unbiased
+Let $B1$ and $B2$ be two orthonormal bases in a d-dimensional Hilbert space.
+$B1$ and $B2$ are said to be mutually unbiased
 if and only if the absolute value of the inner product between any two vectors in the two bases is equal to $\frac{1}{\sqrt {d}}$.
 Additionally, the existence of MUB in a d-dimensional Hilbert space has been proven to be linked to the
 mathematical structure of the unitary group and the finite Fourier transform over finite fields.
 
-When the dimensionality of the Hilbert space is prime or power of prime, it is possible to construct d+1 MUB.
+When the dimensionality ,$d$, of the Hilbert space is prime $d=p$ or power of prime $d=p^n$, it is possible to construct $d+1$ MUB.~\cite{durt2010mutually}
 In addition, for certain composite dimensions, there exist subsets of MUB that satisfy certain conditions,
 such as the so-called "symmetric informationally complete positive operator-valued measures" (SIC-POVMs),
 which can be used in quantum state tomography and related applications.
@@ -30,13 +30,10 @@ has been shown to provide accurate and efficient reconstructions of quantum stat
 For example, SIC-POVMs have been used in quantum process tomography to reconstruct the dynamics of quantum channels,
 as well as in experimental studies of high-dimensional entanglement \cite{ZhuHayashi2020}\cite{GrossEtAl2010}.
 
-MUB can also be used to detect and correct errors in quantum systems.
-By measuring the state of the system in multiple MUB,
-it is possible to reveal the presence of errors and the specific basis in which the error occurred.
-This information can then be used to correct the error and restore the system to its original state.
 
-Additionally, MUB have been proposed as a tool for quantum key distribution (QKD). In QKD,
-a key is shared between two parties in a secure way, and MUB can be used to encrypt the key in such a way that any
+\subsubsection{Usages in Quantum Cryptography}
+MUB have been proposed as a tool for quantum key distribution (QKD). In QKD,
+a key is shared between two parties in a secure way~\cite{bennett_quantum_1984}, and MUB can be used to encrypt the key in such a way that any
 third party trying to intercept it will not be able to read it.
 MUB can be used to encrypt the key in a way that relative to other sets of states, it is more secure against any type of attacks~\cite{wootters1989optimal}.
 

@@ -4,6 +4,7 @@
 \contentsline {subsection}{\numberline {1.1}Mutually Unbiased Bases}{2}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Mathematical Definition of MUB}{2}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}Usages in Quantum Tomography}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Usages in Quantum Cryptography}{3}{subsubsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.2}Variational Quantum Algorithms (VQA)}{3}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Variational Quantum Eigensolver (VQE)}{3}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}QAOA}{4}{subsubsection.1.2.2}%

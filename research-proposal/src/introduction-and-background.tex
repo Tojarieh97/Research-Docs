@@ -32,10 +32,16 @@ as well as in experimental studies of high-dimensional entanglement \cite{ZhuHay
 
 
 \subsubsection{Usages in Quantum Cryptography}
-MUB have been proposed as a tool for quantum key distribution (QKD). In QKD,
-a key is shared between two parties in a secure way~\cite{bennett_quantum_1984}, and MUB can be used to encrypt the key in such a way that any
-third party trying to intercept it will not be able to read it.
-MUB can be used to encrypt the key in a way that relative to other sets of states, it is more secure against any type of attacks~\cite{wootters1989optimal}.
+MUB have been proposed as a tool for quantum key distribution (QKD).
+In QKD, a key is shared between two parties in a secure way. There are QKD protocols in higher dimensions, 
+utilizing mutually unbiased bases (MUBs) and implemented
+through photons possessing orbital angular momentum. ~\cite{mafu2013higher}
+The study employs (d+1) MUBs in both a classical preparation-measurement setup and with entangled photon pairs,
+across dimensions from d=2 to d=5. The analysis takes into account detection efficiency and the probability of photon pair creation.
+Key security metrics such as average error rate, shared mutual information between sender and receiver,
+and the rate of secret key generation per photon are derived from the experimental data.
+The results highlight that elevating the dimension can boost the information capacity and enhance the
+photon's key generation rate, with significant improvements observed up to a dimension of d=4.
 
 \subsection{Variational Quantum Algorithms (VQA)}\label{subsec:variational-quantum-algorithms}
 Variational quantum algorithms (VQA) are a class of quantum algorithms that utilize a classical optimization loop to
@@ -55,20 +61,16 @@ and properties, as well as the simulation of materials. In particular, VQE has b
 simulating small and medium-sized quantum systems, where exact diagonalization and quantum Monte Carlo methods become infeasible
 due to the exponential scaling of the dimension of the quantum state space.
 Besides quantum chemistry, VQE has been used for a variety of applications, including optimization problems modeled by
-Ising-model Hamiltonians \cite{moll2018introduction}.
+Ising-model Hamiltonians \cite{moll2018introduction} ~\cite{lucas2014ising}.
 The Ising model is a mathematical model used to describe the behavior of interacting spins in a system.
 The Ising-model Hamiltonian can be mapped onto a quantum circuit, which can then be optimized using VQE\cite{moll2018introduction}.
 By finding the ground state of the Ising-model Hamiltonian, researchers can obtain an approximate solution to the original problem.
-One common application of the Ising model in the context of VQE is in solving the Max-Cut problem.
-In this problem, the goal is to partition a graph into two sets such that the number of edges between the sets is maximized.
-This problem can be transformed into an Ising-model Hamiltonian, where the spins represent the nodes of the graph and
-the coupling constants represent the edges.
-By using VQE to find the ground state of the Ising-model Hamiltonian, researchers can obtain an approximate solution to the Max-Cut problem\cite{farhi2014quantum}.
+
 Another application of VQE is in solving systems of linear equations, where the goal is to find the solution to a set
 of linear equations. The fundamental state, or ground state, of a Hamiltonian can be used to solve linear equations
 in a way that is similar to classical linear algebra algorithms. Specifically, the Hamiltonian can be constructed
 such that its ground state corresponds to the solution of the linear equations. By finding the ground state of the
-Hamiltonian using VQE, the solution to the linear equations can be obtained\cite{harrow2009quantum}.
+Hamiltonian using VQE, the solution to the linear equations can be obtained~\cite{harrow2009quantum}.
 
 
 \subsubsection{QAOA}
@@ -79,6 +81,8 @@ The cost function is formulated as a sum of Pauli products, and the QAOA circuit
 rotation of these products in the computational basis. The QAOA algorithm has been applied to various
 optimization problems, including MaxCut, Minimum Vertex Cover, and Max-SAT, among others, demonstrating
 its potential for solving combinatorial optimization problems on quantum computers.
+In MaxCut problem, the goal is to partition a graph into
+two sets such that the number of edges between the sets is maximized.
 The QAOA algorithm has also been shown to be effective for tackling optimization problems in classical
 machine learning and operations research, such as portfolio optimization and logistics planning.
 
@@ -104,19 +108,15 @@ It is also used to design algorithms for finding the global minimum of the energ
 The Vehicle Routing Problem (VRP) is a central problem in the field of transportation and logistics.
 It aims to find the most efficient routes for a fleet of vehicles to visit a set of customers,
 typically referred to as "stops" or "delivery points", while minimizing the total distance traveled.
-VRP is known for being a NP-hard problem \cite{toth2002vehicle}, meaning that it is computationally difficult to find an exact solution
-in a reasonable amount of time for large instances of the problem.
-Some variants of the VRP are known to be NP-complete, meaning that finding the optimal solution is
-computationally intractable as the problem size grows.
-One of the most common NP-complete versions of the VRP is the Capacitated Vehicle Routing Problem (CVRP) \cite{Toth2014}.
+VRP is known for being a NP-hard problem \cite{toth2002vehicle}, however some variants of the VRP are known to be NP-complete, meaning that
+he solution is in NP, in addition to the problem being NP-Hard.
+One of the most common NP-hard versions of the VRP is the Capacitated Vehicle Routing Problem (CVRP) \cite{Toth2014}.
 In the CVRP, a fleet of vehicles with limited capacity must be used to serve a set of customers, each with a known
 demand. The objective is to minimize the number of vehicles and the total distance traveled while satisfying
 the capacity constraints.
-Another common NP-complete version of the VRP is the Vehicle Routing Problem with Time Windows (VRPTW) \cite{Desrochers1992}.
+Another common NP-hard version of the VRP is the Vehicle Routing Problem with Time Windows (VRPTW) \cite{Desrochers1992}.
 In the VRPTW, each customer has a time window during which they can be serviced, and the objective is to minimize
 the total travel time while ensuring that all time windows are satisfied.
-Both the CVRP and the VRPTW are NP-complete, meaning that finding the optimal solution for large problem instances is
-extremely difficult.
 
 \subsubsection{Classical Computing Approaches for the Solution}
 The Vehicle Routing Problem (VRP) has been extensively studied by researchers from various fields, including operations research,
@@ -131,7 +131,7 @@ There are several approaches that researchers have used to try and solve the VRP
     e.g.\ constraint programming involves formulating the VRP as a set of constraints and using constraint satisfaction algorithms to find a feasible solution.
     \item Heuristics: Researchers have also developed heuristics and meta-heuristics, such as genetic algorithms, simulated annealing, tabu search, and ant colony optimization, to quickly find near-optimal solutions to the VRP.
     \item Artificial Intelligence: Researchers have also applied various artificial intelligence techniques, such as neural networks and decision trees, to find good solutions to the VRP.
-    \item Exact Algorithms: Researchers have also developed exact algorithms, such as branch-and-cut and branch-and-price, to find the optimal solution to the VRP. These algorithms are typically very slow but guarantee an optimal solution~\cite{laporte1987exact}.
+    \item Exact Algorithms: Researchers have also developed exact algorithms, such as branch-and-cut and branch-and-price, to find the optimal solution to the VRP. These algorithms are typically exponentially slow but guarantee an optimal solution~\cite{laporte1987exact}.
     \item Hybrid Approaches: Researchers have also combined multiple approaches, such as combining heuristics and exact algorithms, to find better solutions to the VRP~\cite{hifi2014hybrid}.
 \end{itemize}
 All of these approaches have been successful to some extent in solving the VRP, but the VRP remains a challenging problem and there is still ongoing research in this area.
@@ -141,16 +141,14 @@ The VRP is a complex problem that has many variations and applications, and rese
 One of the quantum computing approaches for solving the VRP is the quantum annealing algorithm.
 This algorithm uses a quantum system to find the global minimum of an objective function by gradually reducing the
 energy of the system. In the case of the VRP, the objective function represents the total distance or cost of all
-the routes, and the quantum system can be used to find the optimal solution in a much faster time compared to classical
-optimization algorithms.\\
-Another approach is the quantum-inspired optimization algorithms, which mimic the behavior of quantum systems to solve
-classical optimization problems. These algorithms have been shown to be effective in finding near-optimal solutions to
-the VRP in a much faster time compared to classical optimization algorithms.\\
-A recent article applied QAOA to the VRP~\cite{9605345}. In this work, the authors propose a heuristic
-based on QAOA for the VRP and
-compare its performance with classical heuristics. The results show that the proposed heuristic
-outperforms the classical heuristics in terms of solution quality and computational time.
-There were also VQE solution approaches for VRP~\cite{mohanty2022analysis}.
+the routes, and the quantum system can be used to find the optimal solution~\cite{borowski2020new}.\\
+
+Another approach is the quantum-inspired hardware, which mimic the behavior of quantum systems to solve
+similar optimization problems.
+This technology have been shown to be effective, more robust than
+heuristics,and more scalable than classical optimization solvers. ~\cite{9605345}.\\
+
+There were VQE solution approaches for VRP~\cite{mohanty2022analysis}.
 Analysis of the effects of noise in a gate-based
 simulation of an algorithm to solve the vehicle routing problem.
 It was found that amplitude damping

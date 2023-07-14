@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{wootters1989optimal}
-William~K Wootters and Brian~D Fields.
-\newblock Optimal state-determination by mutually unbiased measurements.
-\newblock {\em Annals of Physics}, 191(2):363--381, 1989.
-
 \bibitem{durt2010mutually}
 Thomas Durt, Berthold-Georg Englert, Ingemar Bengtsson, and Karol
   {\.Z}yczkowski.
@@ -23,11 +18,13 @@ David Gross, Yi-Kai Liu, Steven~T Flammia, Simon Becker, and Jens Eisert.
 \newblock Quantum state tomography via compressed sensing.
 \newblock {\em Physical Review Letters}, 105(15):150401, 2010.
 
-\bibitem{bennett_quantum_1984}
-Charles~H. Bennett and Gilles Brassard.
-\newblock Quantum cryptography: Public key distribution and coin tossing.
-\newblock In {\em Proceedings of the IEEE International Conference on
-  Computers, Systems and Signal Processing}, pages 175--179, 1984.
+\bibitem{mafu2013higher}
+Mhlambululi Mafu, Angela Dudley, Sandeep Goyal, Daniel Giovannini, Melanie
+  McLaren, Miles~J Padgett, Thomas Konrad, Francesco Petruccione, Norbert
+  L{\"u}tkenhaus, and Andrew Forbes.
+\newblock Higher-dimensional orbital-angular-momentum-based quantum key
+  distribution with mutually unbiased bases.
+\newblock {\em Physical Review A}, 88(3):032305, 2013.
 
 \bibitem{cerezo2021variational}
 Marco Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C Benjamin, Suguru Endo,
@@ -47,15 +44,20 @@ Nikolaj Moll, Paul~D Nation, and Al{\'a}n Aspuru-Guzik.
 \newblock {\em Introduction to Quantum Algorithms for Physics and Chemistry}.
 \newblock CRC Press, Boca Raton, FL, 2018.
 
-\bibitem{farhi2014quantum}
-Edward Farhi, Jeffrey Goldstone, and Sam Gutmann.
-\newblock A quantum approximate optimization algorithm.
-\newblock {\em arXiv preprint arXiv:1411.4028}, 2014.
+\bibitem{lucas2014ising}
+Andrew Lucas.
+\newblock Ising formulations of many np problems.
+\newblock {\em Frontiers in physics}, 2:5, 2014.
 
 \bibitem{harrow2009quantum}
 Aram~W Harrow, Avinatan Hassidim, and Seth Lloyd.
 \newblock Quantum algorithm for linear systems of equations.
 \newblock {\em Physical Review Letters}, 103(15):150502, 2009.
+
+\bibitem{farhi2014quantum}
+Edward Farhi, Jeffrey Goldstone, and Sam Gutmann.
+\newblock A quantum approximate optimization algorithm.
+\newblock {\em arXiv preprint arXiv:1411.4028}, 2014.
 
 \bibitem{wales2003energy}
 David~J Wales and Harold~A Scheraga.
@@ -107,6 +109,16 @@ Mhand Hifi and Lei Wu.
   windows.
 \newblock In {\em 2014 International Conference on Control, Decision and
   Information Technologies (CoDIT)}, pages 188--194. IEEE, 2014.
+
+\bibitem{borowski2020new}
+Micha{\l} Borowski, Pawe{\l} Gora, Katarzyna Karnas, Mateusz B{\l}ajda,
+  Krystian Kr{\'o}l, Artur Matyjasek, Damian Burczyk, Miron Szewczyk, and
+  Micha{\l} Kutwin.
+\newblock New hybrid quantum annealing algorithms for solving vehicle routing
+  problem.
+\newblock In {\em Computational Science--ICCS 2020: 20th International
+  Conference, Amsterdam, The Netherlands, June 3--5, 2020, Proceedings, Part
+  VI}, pages 546--561. Springer, 2020.
 
 \bibitem{9605345}
 Whei~Yeap Suen, Chun Yat~Lee, and Hoong~Chuin Lau.

@@ -1,7 +1,7 @@
-\subsection{Mutually Unbiased Bases}\label{subsec:mutually-unbiased-bases}
+\usepackage{latex}\subsection{Mutually Unbiased Bases}\label{subsec:mutually-unbiased-bases}
 Mutually unbiased bases (MUB) are a fundamental concept in quantum information that have been studied extensively in recent years.
 They are a set of orthonormal bases in a Hilbert space that are pairwise unbiased, meaning that the inner product between
-any two states from different bases is the same~\cite{wootters1989optimal}~\cite{durt2010mutually}.
+any two states from different bases is the same~\cite{durt2010mutually}.
 This property has important implications in quantum mechanics,
 including quantum state tomography and quantum error correction.
 
@@ -13,7 +13,7 @@ if and only if the absolute value of the inner product between any two vectors i
 Additionally, the existence of MUB in a d-dimensional Hilbert space has been proven to be linked to the
 mathematical structure of the unitary group and the finite Fourier transform over finite fields.
 
-When the dimensionality ,$d$, of the Hilbert space is prime $d=p$ or power of prime $d=p^n$, it is possible to construct $d+1$ MUB.~\cite{durt2010mutually}
+When the dimensionality ,$d$ , of the Hilbert space is prime $d=p$ or power of prime $d=p^n$, it is possible to construct $d+1$ MUB ~\cite{durt2010mutually}.
 In addition, for certain composite dimensions, there exist subsets of MUB that satisfy certain conditions,
 such as the so-called "symmetric informationally complete positive operator-valued measures" (SIC-POVMs),
 which can be used in quantum state tomography and related applications.
@@ -23,7 +23,8 @@ which can be used in quantum state tomography and related applications.
 Recent research has focused on finding MUB in large-dimensional Hilbert spaces, as well as exploring their potential
 uses in quantum state tomography and quantum information science.
 Quantum state tomography is the process of learning an unknown quantum state from repeated state preparations and measurements,
-and yields optimal knowledge of the state's density matrix. MUB can be used to obtain this information efficiently,
+and yields optimal knowledge of the state's density matrix.
+MUB can be used to obtain this information efficiently,
 as they provide a way to obtain unbiased estimates of the density matrix elements. In particular, the use of symmetric
 informationally complete positive operator-valued measures (SIC-POVMs), which form a special subset of MUB,
 has been shown to provide accurate and efficient reconstructions of quantum states in a variety of contexts.
@@ -33,15 +34,18 @@ as well as in experimental studies of high-dimensional entanglement \cite{ZhuHay
 
 \subsubsection{Usages in Quantum Cryptography}
 MUB have been proposed as a tool for quantum key distribution (QKD).
-In QKD, a key is shared between two parties in a secure way. There are QKD protocols in higher dimensions, 
+In QKD, a key is shared between two parties in a secure way ~\cite{bennet1984quantum}. There are QKD protocols in higher dimensions,
 utilizing mutually unbiased bases (MUBs) and implemented
-through photons possessing orbital angular momentum. ~\cite{mafu2013higher}
+through photons possessing orbital angular momentum ~\cite{mafu2013higher}.
 The study employs (d+1) MUBs in both a classical preparation-measurement setup and with entangled photon pairs,
 across dimensions from d=2 to d=5. The analysis takes into account detection efficiency and the probability of photon pair creation.
 Key security metrics such as average error rate, shared mutual information between sender and receiver,
 and the rate of secret key generation per photon are derived from the experimental data.
 The results highlight that elevating the dimension can boost the information capacity and enhance the
 photon's key generation rate, with significant improvements observed up to a dimension of d=4.
+Another example is where the quantum cryptographic method by Bennett and Brassard can be expanded to use three conjugate bases, or six states, increasing security ~\cite{bruss1998optimal}.
+This method, using mutual information, offers better protection against single-qubit eavesdropping.
+Additionally, it explores the link between maximum classical correlation and the overlap of mutual information to enhance the cryptographic protocol.
 
 \subsection{Variational Quantum Algorithms (VQA)}\label{subsec:variational-quantum-algorithms}
 Variational quantum algorithms (VQA) are a class of quantum algorithms that utilize a classical optimization loop to
@@ -61,17 +65,19 @@ and properties, as well as the simulation of materials. In particular, VQE has b
 simulating small and medium-sized quantum systems, where exact diagonalization and quantum Monte Carlo methods become infeasible
 due to the exponential scaling of the dimension of the quantum state space.
 Besides quantum chemistry, VQE has been used for a variety of applications, including optimization problems modeled by
-Ising-model Hamiltonians \cite{moll2018introduction} ~\cite{lucas2014ising}.
+Ising-model Hamiltonians ~\cite{moll2018introduction} ~\cite{lucas2014ising}.
 The Ising model is a mathematical model used to describe the behavior of interacting spins in a system.
-The Ising-model Hamiltonian can be mapped onto a quantum circuit, which can then be optimized using VQE\cite{moll2018introduction}.
+The Ising-model Hamiltonian can be mapped onto a quantum circuit, which can then be optimized using VQE ~\cite{moll2018introduction}.
 By finding the ground state of the Ising-model Hamiltonian, researchers can obtain an approximate solution to the original problem.
 
 Another application of VQE is in solving systems of linear equations, where the goal is to find the solution to a set
 of linear equations. The fundamental state, or ground state, of a Hamiltonian can be used to solve linear equations
 in a way that is similar to classical linear algebra algorithms. Specifically, the Hamiltonian can be constructed
 such that its ground state corresponds to the solution of the linear equations. By finding the ground state of the
-Hamiltonian using VQE, the solution to the linear equations can be obtained~\cite{harrow2009quantum}.
-
+Hamiltonian using VQE, the solution to the linear equations can be obtained ~\cite{harrow2009quantum}.
+One should underscore the fact that the term "E" in VQE, which stands for eigensolver,
+predominantly denotes an eigenvalue solver, primarily tasked with the identification of minimal energy level.
+Nevertheless, on occasion, it may also be employed to reference an eigenstate solver.
 
 \subsubsection{QAOA}
 The Quantum Approximate Optimization Algorithm (QAOA) is a VQA that was introduced in 2014 ~\cite{farhi2014quantum} to address combinatorial optimization problems.
@@ -89,7 +95,7 @@ machine learning and operations research, such as portfolio optimization and log
 
 \subsection{Energy Landscape}\label{subsec:energy-landscape}
 An energy landscape is a concept used in physics and chemistry to describe the potential energy of a system as a function
-of its configuration or of its hamiltonian parameters\cite{wales2003energy}. The configuration of a system refers to the positions and orientations of
+of its configuration or of its hamiltonian parameters \cite{wales2003energy}. The configuration of a system refers to the positions and orientations of
 its components. For example, in a protein, the configuration refers to the positions and orientations of its amino
 acids \cite{dill2012protein}. The energy landscape is often represented as a surface or a plot, with energy values on
 the vertical axis and the coordinates of the system's configuration on the horizontal axes \cite{wales2003energy}.
@@ -103,13 +109,20 @@ for understanding the behavior of systems that can exist in multiple configurati
 and phase transitions. It helps to visualize the possible configurations of the system and their relative stability.
 It is also used to design algorithms for finding the global minimum of the energy function \cite{wales1997global}.
 
+\subsubsection{Connecting VQE to Energy Landscape}
+The optimization algorithms tasked with selecting the successive parameters for the VQE
+do not offer a guarantee to bypass local minima or preclude entrapment within barren plateaus while conducting the search
+for the global minimum—the latter being the preferred solution.
+The application of energy landscape methodologies, in tandem with the use of MUB, could substantially enhance the probability of achieving the global minima.
+A comprehensive elucidation of this approach is available in the subsequent 'Objective of Research' section of this paper.
+
 \subsection{Vehicle Routing Problem}\label{subsec:vehicle-routing-problem}
 
 The Vehicle Routing Problem (VRP) is a central problem in the field of transportation and logistics.
 It aims to find the most efficient routes for a fleet of vehicles to visit a set of customers,
 typically referred to as "stops" or "delivery points", while minimizing the total distance traveled.
-VRP is known for being a NP-hard problem \cite{toth2002vehicle}, however some variants of the VRP are known to be NP-complete, meaning that
-he solution is in NP, in addition to the problem being NP-Hard.
+Determining the optimal solution to VRP is NP-hard \cite{toth2002vehicle}.
+
 One of the most common NP-hard versions of the VRP is the Capacitated Vehicle Routing Problem (CVRP) \cite{Toth2014}.
 In the CVRP, a fleet of vehicles with limited capacity must be used to serve a set of customers, each with a known
 demand. The objective is to minimize the number of vehicles and the total distance traveled while satisfying
@@ -139,9 +152,15 @@ The VRP is a complex problem that has many variations and applications, and rese
 
 \subsubsection{Quantum Computing Approaches for the Solution}
 One of the quantum computing approaches for solving the VRP is the quantum annealing algorithm.
-This algorithm uses a quantum system to find the global minimum of an objective function by gradually reducing the
-energy of the system. In the case of the VRP, the objective function represents the total distance or cost of all
-the routes, and the quantum system can be used to find the optimal solution~\cite{borowski2020new}.\\
+Innovative hybrid algorithms were developed, utilizing quantum annealing to
+tackle the Vehicle Routing Problem (VRP) and its Capacitated variant (CVRP).
+This study also introduced quantum-exclusive algorithms, with rigorous testing conducted via D-Wave’s Leap framework.
+The outcomes indicate that these hybrid methods can provide competitive or potentially superior solutions
+compared to traditional algorithms for VRP and CVRP.
+~\cite{borowski2020new}.\\
+In light of the aforementioned, it remains imperative to acknowledge that,
+as of the current state of research,
+a definitive conclusion regarding the superiority of D-Wave's quantum annealer over its classical counterpart has yet to be established.
 
 Another approach is the quantum-inspired hardware, which mimic the behavior of quantum systems to solve
 similar optimization problems.
@@ -155,6 +174,32 @@ It was found that amplitude damping
 noise causes the least impact on the results of an optimized
 variational circuit. In contrast bit-phase-flip, depolarising and
 phase-flip noise channels had the maximum negative impact.
+One of the needed steps, of course was modeling VRP in qunatum, in other words
+mapping the cost function of VRP to an Ising Hamiltonian $H_c$,
+\equation
+{
+    H_{Ising} = -\sum_{i}\sum_{i<j}J_{ij} s_i s_j
+                -\sum_{i}h_i s_i + d
+}
+$s_{ij} \in \{-1, 1\}$ is a spin variable which came up from binary decision variable
+$x_{ij} = (s_{ij} + 1)/2$.
+The terms $J_{ij}$ ; $h_i$ and $d$ are defined as follows,
+\equation
+{
+    J_{ij} = -\frac{Q_{ij}}{2}, \forall {i < j}
+}
+
+
+\equation
+{
+    h_{i} = \frac{g_i}{2} + \sum\frac{Q_{ij}}{4} + \sum\frac{Q_{ji}}{4}
+}
+
+
+\equation
+{
+    d = c + \sum_{i}\frac{g_i}{2} + \sum_{i}\sum_{j}\frac{Q_{ij}}{4}
+}
 
 
 

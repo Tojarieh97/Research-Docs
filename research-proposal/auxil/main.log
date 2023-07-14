@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  11 JUL 2023 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  14 JUL 2023 10:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1687,57 +1687,132 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `main.toc'.
 
 
-(introduction-and-background.tex [1
+[1
 
 {C:/Users/hadar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(introduction-and-background.tex
 
-LaTeX Warning: Citation `mafu2013higher' on page 2 undefined on input line 38.
+introduction-and-background.tex:1: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage
+               {latex}\subsection{Mutually Unbiased Bases}\label{subsec:mutu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [2]
 
-LaTeX Warning: Citation `lucas2014ising' on page 3 undefined on input line 64.
+LaTeX Warning: Citation `bennet1984quantum' on page 3 undefined on input line 3
+7.
+
+
+LaTeX Warning: Citation `bruss1998optimal' on page 3 undefined on input line 46
+.
 
 [3] [4] [5]
-Overfull \hbox (2.63136pt too wide) in paragraph at lines 134--135
+Overfull \hbox (2.63136pt too wide) in paragraph at lines 147--148
 []\T1/cmr/m/n/12 Exact Al-gorithms: Re-search-ers have also de-veloped ex-act a
 l-gorithms, such as branch-
  []
 
-
-LaTeX Warning: Citation `borowski2020new' on page 6 undefined on input line 144
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
-
- []
-
-
-Overfull \hbox (3.93404pt too wide) in paragraph at lines 146--150
+[6]
+Overfull \hbox (3.93404pt too wide) in paragraph at lines 165--169
 []\T1/cmr/m/n/12 Another ap-proach is the quantum-inspired hard-ware, which mim
 ic the be-ha-vior of quantum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
  []
 
-) [6] [7]
+introduction-and-background.tex:184: Display math should end with $$.
+<to be read again> 
+                   s
+l.184 $s
+        _{ij} \in \{-1, 1\}$ is a spin variable which came up from binary de...
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+introduction-and-background.tex:184: Missing $ inserted.
+<inserted text> 
+                $
+l.184 $s_
+         {ij} \in \{-1, 1\}$ is a spin variable which came up from binary de...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+introduction-and-background.tex:191: Missing $ inserted.
+<inserted text> 
+                $
+l.191 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+introduction-and-background.tex:191: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.191 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+introduction-and-background.tex:197: Missing $ inserted.
+<inserted text> 
+                $
+l.197 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+introduction-and-background.tex:197: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.197 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+introduction-and-background.tex:203: Missing $ inserted.
+<inserted text> 
+                $
+l.203 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+introduction-and-background.tex:203: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.203 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+) [7] [8]
 (C:/Users\hadar\my-projects\Research-Docs\research-proposal\auxil\main.bbl
-[8] [9]) [10]
+[9] [10]) [11]
 (C:/Users\hadar\my-projects\Research-Docs\research-proposal\auxil\main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 095DA9670F7B8B519A4F2385FC1728BA;3046.
+(rerunfilecheck)             Checksum: 63824BDE5E02121B96F6A9FD5C77BF58;3296.
  ) 
 Here is how much of TeX's memory you used:
- 16501 strings out of 478338
- 268798 string characters out of 2836700
- 607590 words of memory out of 3000000
- 34609 multiletter control sequences out of 15000+600000
+ 16510 strings out of 478338
+ 268908 string characters out of 2836700
+ 606617 words of memory out of 3000000
+ 34611 multiletter control sequences out of 15000+600000
  482190 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,11n,77p,1195b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1751,16 +1826,18 @@ ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\hadar\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\hadar\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\hadar\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/hadar/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/hada
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
-ers/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb>
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/hada
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/U
+sers/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/hadar/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on C:/Users\hadar\my-projects\Research-Docs\research-proposal\ou
-t\main.pdf (10 pages, 217336 bytes).
+t\main.pdf (11 pages, 247542 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  14 JUL 2023 10:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.29)  17 JUL 2023 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12142,7 +12142,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 introduction-and-background.tex:153: Undefined control sequence.
 l.153 \subsubsection
-                    {Quantum Computing Approaches for the Solution}
+                    {Quantum Computing Approaches for the Solution}\label{su...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13763,60 +13763,77 @@ Overfull \hbox (5.20486pt too wide) in paragraph at lines 184--187
 \OML/cmm/m/it/10 d$
  []
 
-
-Overfull \hbox (82.51622pt too wide) detected at line 191
-[][] 
- []
-
-Missing character: There is no h in font nullfont!
-introduction-and-background.tex:193: Missing $ inserted.
+introduction-and-background.tex:191: Missing $ inserted.
 <inserted text> 
                 $
-l.193     h_
-            {i} = \frac{g_i}{2} + \sum\frac{Q_{ij}}{4} + \sum\frac{Q_{ji}}{4}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-introduction-and-background.tex:194: Extra }, or forgotten $.
-l.194 }
-       \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-introduction-and-background.tex:199: Missing $ inserted.
-<inserted text> 
-                $
-l.199 
+l.191 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+introduction-and-background.tex:191: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.191 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
-Overfull \hbox (13.8848pt too wide) in paragraph at lines 191--199
- $[] \OT1/cmr/m/n/10 =
+
+Overfull \hbox (82.51622pt too wide) detected at line 191
+[]
  []
 
 
-Overfull \hbox (17.24693pt too wide) in paragraph at lines 191--199
-[] \OT1/cmr/m/n/10 +
+Overfull \hbox (20.0pt too wide) in paragraph at lines 193--193
+[] 
+ []
+
+introduction-and-background.tex:197: Missing $ inserted.
+<inserted text> 
+                $
+l.197 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+introduction-and-background.tex:197: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.197 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (124.2863pt too wide) detected at line 197
+[]
  []
 
 
-Overfull \hbox (35.10149pt too wide) in paragraph at lines 191--199
-[] [] \OT1/cmr/m/n/10 +
+Overfull \hbox (20.0pt too wide) in paragraph at lines 199--199
+[] 
  []
 
+introduction-and-background.tex:203: Missing $ inserted.
+<inserted text> 
+                $
+l.203 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \hbox (27.32368pt too wide) in paragraph at lines 191--199
-[] [][] 
- []
+introduction-and-background.tex:203: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.203 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
 
-Overfull \hbox (119.4193pt too wide) in paragraph at lines 191--199
-[][] 
+Overfull \hbox (123.49057pt too wide) detected at line 203
+[]
  []
 
 )
@@ -13833,5 +13850,5 @@ Here is how much of TeX's memory you used:
  18557 multiletter control sequences out of 15000+600000
  469567 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,4n,23p,347b,108s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 18i,3n,23p,347b,108s stack positions out of 10000i,1000n,20000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

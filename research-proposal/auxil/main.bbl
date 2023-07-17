@@ -18,6 +18,12 @@ David Gross, Yi-Kai Liu, Steven~T Flammia, Simon Becker, and Jens Eisert.
 \newblock Quantum state tomography via compressed sensing.
 \newblock {\em Physical Review Letters}, 105(15):150401, 2010.
 
+\bibitem{bennet1984quantum}
+CH~BENNET.
+\newblock Quantum cryptography: Public key distribution and coin tossing.
+\newblock In {\em Proc. of IEEE Int. Conf. on Comp. Sys. and Signal Proc., Dec.
+  1984}, 1984.
+
 \bibitem{mafu2013higher}
 Mhlambululi Mafu, Angela Dudley, Sandeep Goyal, Daniel Giovannini, Melanie
   McLaren, Miles~J Padgett, Thomas Konrad, Francesco Petruccione, Norbert
@@ -25,6 +31,11 @@ Mhlambululi Mafu, Angela Dudley, Sandeep Goyal, Daniel Giovannini, Melanie
 \newblock Higher-dimensional orbital-angular-momentum-based quantum key
   distribution with mutually unbiased bases.
 \newblock {\em Physical Review A}, 88(3):032305, 2013.
+
+\bibitem{bruss1998optimal}
+Dagmar Bru{\ss}.
+\newblock Optimal eavesdropping in quantum cryptography with six states.
+\newblock {\em Physical Review Letters}, 81(14):3018, 1998.
 
 \bibitem{cerezo2021variational}
 Marco Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C Benjamin, Suguru Endo,
@@ -131,6 +142,11 @@ Nishikanta Mohanty, Bikash~K Behera, and Christopher Ferrie.
 \newblock Analysis of the vehicle routing problem sovled via hybrid quantum
   algorithms in presence of noisy channels.
 \newblock {\em arXiv preprint arXiv:2205.07630}, 2022.
+
+\bibitem{kim2022quantum}
+Joonho Kim and Yaron Oz.
+\newblock Quantum energy landscape and circuit optimization.
+\newblock {\em Physical Review A}, 106(5):052424, 2022.
 
 \bibitem{lin2020quantum}
 Junan Lin and Tal Mor.

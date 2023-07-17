@@ -130,28 +130,27 @@
     \input{introduction-and-background}
 
     \section{Related Work}\label{sec:related-work}
-    There are few parers about using quantum annealing to solve those kind of optimization problems, that are intractable
-    for classical computers.
-    Quantum Annealing (QA) is a method for solving optimization problems that is inspired by the process of annealing in
-    metallurgy.
-    Like classical simulated annealing, it is a method that uses a random search to find the global minimum
-    of an energy function, but it uses the principles of quantum mechanics to guide the search.
-    In QA, the optimization problem is mapped to a physical system, called the quantum annealer,
-    which consists of a large number of interacting quantum bits (qubits).
-    The energy function of the optimization problem is encoded into the Hamiltonian of the quantum annealer,
-    and the ground state of the Hamiltonian corresponds to the optimal solution of the problem.
+    An extensive analysis of the impact of entanglement and control parameters on the energy landscape
+    and the performance of the variational quantum circuit's optimization was conducted ~\cite{kim2022quantum}.
+    This research undertook a meticulous examination of the Hessian spectrum, 
+    enabling the characterization of the energy landscape's local geometry at an arbitrary point as well
+    as across an optimization path.
 
-    The quantum annealer is initialized in a high-energy state,
-    and then it is slowly cooled down to its ground state by applying a time-dependent Hamiltonian.
-    The cooling process is guided by a schedule that controls the rate of change of the Hamiltonian.
-    The schedule is designed to avoid getting stuck in local minima and to increase the chances of finding the global minimum.
+    It was postulated that a reduction in entangling capability and an increase in the number of circuit parameters 
+    produce analogous qualitative effects on the Hessian eigenspectrum. 
+    Both scenarios, possessing minimal entangling capability and an excess of control parameters, 
+    lead to an increased curvature in non-flat directions. This enhancement was found to contribute 
+    significantly to the efficient exploration for area-law entangled ground states, thereby improving 
+    optimization precision and hastening convergence speed.
 
+
+    Further examination of pertinent literature can be undertaken by referring to Section ~\ref{subsubsec:qc-approaches-for-solution},
+    which provides an extensive review of related works in the field.
 
     \section{Objectives of the Research}\label{sec:objectives-of-the-research}
     The purpose of the M.Sc. research is to configure a way to draw the energy landscape of a quantum system using MUB.
-    Through that, a great number of realizations can be reached, for example avoid local minima and find the absolute minimum, avoid barren plateaus\@.
-    In our research, we are going to focus on a problem which preoccupies the entire optimization world, the Vehicle Routing Problem.
-    Although our research will focus on this problem as our quantum system, one can refer to other NP-hard problem, after the usage of MUB as
+    In our research, we are going to focus on a problem which preoccupies the optimization world, the Vehicle Routing Problem.
+    Although our research will focus on this problem, one can refer to other NP-hard problem, after the usage of MUB as
     a potential tool for drawing the energy landscape will be demonstrated.
     In the pursuit of our research objective, the utilization of quantum algorithmss and the implementation of a hybrid
     quantum-classical approach may provide significant benefits.
@@ -165,7 +164,8 @@
     all customers.
     The configuration space is defined by the possible routes and the assignments of customers to vehicles.
     The global minimum of the energy function corresponds to the optimal solution of the problem\@.\\
-    The search in the energy space can be done by using machine learning model or neural networks, for the correct differential
+    For small size problems the entire space can be searched using the MUB method. For larger sizes,
+    the search in the energy space can be done by using machine learning model or neural networks, for the correct differential
     fluctuations needed in the angles of each quantum eigenstate of the mutually unbiased bases in use.
     The use of machine learning in the context of MUB is motivated by two main considerations.
     Firstly, the exponential growth of the number of MUB states for a large number of qubits necessitates the development
